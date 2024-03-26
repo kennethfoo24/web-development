@@ -5,13 +5,13 @@ FROM --platform=linux/amd64 node:21
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+COPY rest-api/package*.json ./
 
 # Install application dependencies
 RUN npm install
 
 # Copy the application files to the container
-COPY . .
+COPY rest-api/. .
 
 # Expose the port that the app will run on
 EXPOSE 3000
