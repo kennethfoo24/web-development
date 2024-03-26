@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose the port that the app will run on
-EXPOSE 3001
+EXPOSE 3000
 
 ARG DD_GIT_REPOSITORY_URL
 ARG DD_GIT_COMMIT_SHA
